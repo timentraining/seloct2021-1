@@ -17,7 +17,7 @@ public class LoginTests2 {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		
-		
+		//
 
 		//Go to http://www.automationpractice.com
 		driver.get("http://www.automationpractice.com");
