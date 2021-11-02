@@ -1,5 +1,6 @@
 package com.automationpractice;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -15,7 +16,7 @@ public class DemoSelenium {
 		
 //		driver.get("http://www.automationpractice.com");
 		driver.get("http://www.amazon.com");
-		
+		driver.findElements(By.tagName("a")).get(0).click();		
 
 	}
 
