@@ -1,4 +1,4 @@
-package com.automationpractice.testngdemo;
+package com.automationpractice.demo;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

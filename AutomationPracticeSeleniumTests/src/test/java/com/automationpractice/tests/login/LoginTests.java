@@ -1,15 +1,23 @@
 package com.automationpractice.tests.login;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import com.automationpractice.framework.WebDriverBase;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class LoginTests {
+public class LoginTests extends WebDriverBase{
+
+	
 	
 	@Test
 	public void countCorrectNumberOfTextBoxInSignInPage() {
@@ -71,8 +79,7 @@ public class LoginTests {
 		//TC001 : Login with invalid userid
 		
 		
-				WebDriverManager.chromedriver().setup();
-				WebDriver driver = new ChromeDriver();
+
 				
 				//Go to http://www.automationpractice.com
 				driver.get("http://www.automationpractice.com");
