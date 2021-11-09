@@ -10,6 +10,9 @@ public class RegistrationTests2 extends WebDriverBase{
 	@Test
 	public void test1() {
 		driver.get("http://www.google.com");
+		//
+		//
+		//
 	}
 	
 }

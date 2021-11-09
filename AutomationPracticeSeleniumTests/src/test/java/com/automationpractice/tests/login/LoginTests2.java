@@ -1,9 +1,12 @@
 package com.automationpractice.tests.login;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -16,6 +19,7 @@ public class LoginTests2 {
 		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		
 		//
 
@@ -24,8 +28,10 @@ public class LoginTests2 {
 		
 		
 		//Click Sign in button from top right corner of the page
-		WebElement  signInButton = driver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a"));
-		signInButton.click();
+		WebElement  signInButton = driver.findElement(By.xpath("//a[normalize-space()='Sign in']"));
+//		signInButton.click();
+		Actions actions = new Actions(driver);
+		actions.click(signInButton).build().perform();
 		
 		//Enter valid email address 'abc213@mailinator.com' in email address text field of right side
 		WebElement emailAddressTextField = driver.findElement(By.xpath("//*[@id=\"email\"]"));
