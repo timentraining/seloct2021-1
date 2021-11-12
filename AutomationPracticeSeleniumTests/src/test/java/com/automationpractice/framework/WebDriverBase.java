@@ -28,7 +28,7 @@ public class WebDriverBase {
 	public void afterTest() {
 		System.err.println("Close the browser");
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

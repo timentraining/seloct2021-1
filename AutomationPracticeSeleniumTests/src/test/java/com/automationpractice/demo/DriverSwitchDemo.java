@@ -1,8 +1,13 @@
 package com.automationpractice.demo;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Set;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -21,8 +26,7 @@ import com.automationpractice.framework.WebDriverBase;
 
 
 public class DriverSwitchDemo extends WebDriverBase{
-	
-	
+
 	
 	@Test
 	public void switchToWindow() {
@@ -51,6 +55,11 @@ public class DriverSwitchDemo extends WebDriverBase{
 		//A new window will open, click on Download Files box from new window
 		driver.findElement(By.xpath("//h5[normalize-space()='DownLoad Files']")).click();
 		
+		
+		
+		driver.findElement(By.xpath("//*[@id=\"contact-link\"]/a")).click();
+		
+
 		
 		
 	}

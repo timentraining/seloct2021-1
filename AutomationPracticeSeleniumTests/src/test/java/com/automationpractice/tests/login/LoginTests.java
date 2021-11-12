@@ -78,9 +78,6 @@ public class LoginTests extends WebDriverBase{
 		
 		//TC001 : Login with invalid userid
 		
-		
-
-				
 				//Go to http://www.automationpractice.com
 				driver.get("http://www.automationpractice.com");
 				
