@@ -6,9 +6,11 @@ import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -25,6 +27,23 @@ public class UI {
 	public void openUrl(String url) {
 		driver.get(url);
 	}
+	
+	
+	//FINDING ELEMENTS
+	public WebElement findElementByClassName(String className) {
+		WebElement e = driver.findElement(By.className(className));
+		return e;
+	}
+	public WebElement findElementByXpath(String xpath) {
+		WebElement e = driver.findElement(By.xpath(xpath));
+		return e;
+	}
+	public WebElement findElementById(String id) {
+		WebElement e = driver.findElement(By.id(id));
+		return e;
+	}
+	
+	
 	
 	
 	//CLICKING
@@ -76,6 +95,22 @@ public class UI {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	
+	
+	//JAVASCRIPT EXECUTION
+	public void highlightAnElementByJS(WebElement e) {
+		JavascriptExecutor javaScriptExecutor = (JavascriptExecutor) driver;
+		javaScriptExecutor.executeScript(" arguments[0].style.border= 'solid 3px red'; ", e);
+	}
+	public void deHighlightAnElementByJS(WebElement e) {
+		JavascriptExecutor javaScriptExecutor = (JavascriptExecutor) driver;
+		javaScriptExecutor.executeScript(" arguments[0].style.border= 'solid 0px white'; ", e);
+	}
+	public void clickByJS(WebElement e) {
+		JavascriptExecutor javaScriptExecutor = (JavascriptExecutor) driver;
+		javaScriptExecutor.executeScript("arguments[0].click();", e);
 	}
 	
 

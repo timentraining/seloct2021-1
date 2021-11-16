@@ -1,9 +1,14 @@
 package com.automationpractice.demo;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class DemoTest {
+import com.automationpractice.framework.WebDriverBase;
+
+public class DemoTest extends WebDriverBase{
 	
 	
 	
@@ -26,7 +31,7 @@ public class DemoTest {
 	//test2
 	@Test
 	public void testDivision() {
-		
+
 		
 	}
 	

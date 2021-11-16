@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automationpractice.tests.profile.ProfileTests">
+      <class name="com.ap.tests.registration.Registrationests">
         <methods>
           <include name="afterTest"/>
+          <include name="register_a_new_user"/>
           <include name="beforeTest"/>
-          <include name="Create_and_delete_Wish_List"/>
         </methods>
-      </class> <!-- com.automationpractice.tests.profile.ProfileTests -->
+      </class> <!-- com.ap.tests.registration.Registrationests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
