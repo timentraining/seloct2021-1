@@ -7,8 +7,8 @@
 		<parameter name="lastname" value="Jane"></parameter>
 		<parameter name="email" value="mjane@yahoo.com"></parameter>
 		<parameter name="password" value="Ashdiusd572"></parameter>
-
-
+		
+	
 		<classes>
 
 			<class name="com.ap.tests.registration.Registrationests" />

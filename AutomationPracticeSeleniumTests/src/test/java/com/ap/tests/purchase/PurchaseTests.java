@@ -7,25 +7,25 @@ import com.automationpractice.framework.WebDriverBase;
 public class PurchaseTests extends WebDriverBase{
 	
 	@Test
-	public void purchaseTest1() {
+	public void aTest() {
 		driver.get("http:www.automationpractice.com");
 		//
 	}
 	
 	@Test
-	public void purchaseTest2() {
+	public void newPurchaseTest() {
 		driver.get("http:www.automationpractice.com");
 		//
 	}
 	
-	@Test
-	public void purchaseTest3() {
+	@Test(priority = 0)
+	public void updatePurchase() {
 		driver.get("http:www.automationpractice.com");
 		//
 	}
 	
-	@Test
-	public void purchaseTest4() {
+	@Test(priority = 3)
+	public void securePurchase() {
 		driver.get("http:www.automationpractice.com");
 		//
 	}

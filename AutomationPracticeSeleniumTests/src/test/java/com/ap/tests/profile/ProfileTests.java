@@ -6,7 +6,7 @@ import com.automationpractice.framework.WebDriverBase;
 
 public class ProfileTests extends WebDriverBase{
 	
-	@Test
+	@Test()
 	public void profileTest1() {
 		driver.get("http:www.automationpractice.com");
 		//
