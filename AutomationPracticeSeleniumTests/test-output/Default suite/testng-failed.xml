@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ap.tests.registration.Registrationests">
+      <class name="com.automationpractice.demo.WebTableDemo">
         <methods>
           <include name="afterTest"/>
-          <include name="register_a_new_user"/>
           <include name="beforeTest"/>
+          <include name="countTheNumberOfColumn"/>
         </methods>
-      </class> <!-- com.ap.tests.registration.Registrationests -->
+      </class> <!-- com.automationpractice.demo.WebTableDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

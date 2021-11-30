@@ -2,9 +2,9 @@ package com.ap.tests.login;
 
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 
 import com.automationpractice.framework.WebDriverBase;
+
 
 public class LoginTests extends WebDriverBase{
 	
@@ -34,6 +34,6 @@ public class LoginTests extends WebDriverBase{
 	public void myNewLoginTest() {
 		driver.get("http:www.automationpractice.com");
 	}
-	
+
 
 }

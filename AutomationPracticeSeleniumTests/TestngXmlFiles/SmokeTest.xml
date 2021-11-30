@@ -17,6 +17,7 @@
 			<class name="com.ap.tests.profile.ProfileTests">
 				<methods>
 					<include name="profileTest3"></include>
+					<include name="profileTest1"></include>
 				</methods>
 
 			</class>
@@ -26,3 +27,4 @@
 
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
+
