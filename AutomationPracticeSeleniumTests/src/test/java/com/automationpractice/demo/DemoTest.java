@@ -6,9 +6,24 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.automationpractice.framework.UI;
 import com.automationpractice.framework.WebDriverBase;
 
 public class DemoTest extends WebDriverBase{
+	
+	
+	@Test
+	public void test1() {
+		UI ui = new UI(driver);
+		
+		ui.click(By.className("abc"));
+		ui.clickByClass("abc");
+		
+		
+		
+		
+		
+	}
 	
 	
 	

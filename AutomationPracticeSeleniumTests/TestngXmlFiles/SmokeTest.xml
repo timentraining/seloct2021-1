@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Smoke Test Suite">
 	<test name="All critical tests">
-	
+
 		<parameter name="username" value="newuser"></parameter>
 		<parameter name="password" value="123454"></parameter>
 

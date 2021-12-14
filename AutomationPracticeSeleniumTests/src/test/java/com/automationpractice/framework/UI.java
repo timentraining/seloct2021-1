@@ -47,13 +47,23 @@ public class UI {
 	
 	
 	//CLICKING
+	public void click(By by) {
+		driver.findElement(by).click();
+	}
+	
 	public void clickByXpath(String xpath) {
 		driver.findElement(By.xpath(xpath)).click();
 	}
 	public void clickById(String id) {
 		driver.findElement(By.id(id)).click();
 	}
-	
+	public void clickByClass(String className) {
+		driver.findElement(By.className(className)).click();
+	}
+	public void clickByJS(WebElement e) {
+		JavascriptExecutor javaScriptExecutor = (JavascriptExecutor) driver;
+		javaScriptExecutor.executeScript("arguments[0].click();", e);
+	}
 	
 	//SENDKEYS
 	public void enterTextByXpath(String xpath, String text) {
@@ -85,6 +95,21 @@ public class UI {
 		wait.until(ExpectedConditions.alertIsPresent());
 	}
 	
+	public void waitForTextToBePresent(WebElement e) {
+		//no code yet
+	}
+	
+	public void waitForElementToBeEnabled(WebElement e) {
+		//no code yet
+	}
+	public void waitForElementToBeClickable(WebElement e) {
+		//no code yet
+	}
+	//
+	//
+	//
+	
+	
 	
 	//SCREENSHOTS
 	public void takScreenshot() {
@@ -108,10 +133,7 @@ public class UI {
 		JavascriptExecutor javaScriptExecutor = (JavascriptExecutor) driver;
 		javaScriptExecutor.executeScript(" arguments[0].style.border= 'solid 0px white'; ", e);
 	}
-	public void clickByJS(WebElement e) {
-		JavascriptExecutor javaScriptExecutor = (JavascriptExecutor) driver;
-		javaScriptExecutor.executeScript("arguments[0].click();", e);
-	}
+
 	
 
 }

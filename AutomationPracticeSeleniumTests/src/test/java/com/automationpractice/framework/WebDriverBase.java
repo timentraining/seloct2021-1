@@ -13,6 +13,7 @@ public class WebDriverBase {
 	
 	
 	protected WebDriver driver;
+
 	
 	@BeforeMethod
 	public void beforeTest() {
@@ -28,12 +29,14 @@ public class WebDriverBase {
 	public void afterTest() {
 		System.err.println("Close the browser");
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		driver.close();
 	}
+	
+	
 	
 	
 
